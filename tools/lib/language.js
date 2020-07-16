@@ -38,13 +38,20 @@ class Language {
     if (this._sample) return this._sample;
 
     this._sample = "";
-    if (fs.existsSync(this.samplePath))
+    if (fs.existsSync(this.samplePath)) {
       this._sample = fs.readFileSync(this.samplePath, {encoding: "utf8"});
+    } else if (fs.existsSync(this.extSamplePath)) {
+      this._sample = fs.readFileSync(this.extSamplePath, {encoding: "utf8"});
+    }
     return this._sample;
   }
 
   get samplePath() {
     return `./test/detect/${this.name}/default.txt`
+  }
+
+  get extSamplePath() {
+    return `${path.dirname(this.path)}/../../test/detect/${this.name}/default.txt`
   }
 
   loadMetadata() {
