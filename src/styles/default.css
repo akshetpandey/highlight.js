@@ -9,6 +9,8 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   overflow-x: auto;
   padding: 0.5em;
   background: #F0F0F0;
+  width: 600px;
+  white-space: pre-wrap;
 }
 
 
@@ -96,4 +98,37 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
 .hljs-strong {
   font-weight: bold;
+}
+
+
+.hljs-heading {
+  color: black;
+  text-emphasis: bold;
+}
+
+
+.hljs-action {
+  color: gray;
+  font-style: italic;
+  display: block;
+  overflow-wrap: break-word;
+}
+
+.hljs-character {
+  color: black;
+  font-weight: bold;
+}
+
+.hljs-parenthetical {
+  color: lightslategray;
+  font-weight: lighter;
+}
+
+.hljs-dialogue {
+  color: black;
+}
+
+.hljs-dialog-block > span{
+  display: block;
+  text-align: center; 
 }

@@ -231,7 +231,7 @@ export default function(hljs) {
     Yippie ki-yay! I got my lower-case C back!
     ```
   */
-  const FOUNTAIN_CHARACTER_REGEX = /(?<=^\s*$\s)^[ \t]*[A-Z0-9 ]*[A-Z ]+[A-Z0-9 ]*(?=$|\()(?!\^$)/;
+  const FOUNTAIN_CHARACTER_REGEX = /(?<=^\s*$\s)^[ \t]*[A-Z0-9 ]*[A-Z ]+[A-Z0-9 ]*(?=$|\(.*\)$)(?!\^$)/;
   const FOUNTAIN_CHARACTER_FORCED_REGEX = /(?<=^\s*$\s)^[ \t]*@[A-Z0-9a-z ]*[A-Za-z ]+[A-Z0-9a-z ]*(?=$|\()/;
   const FOUNTAIN_CHARACTER = {
     className: 'symbol hljs-character',
