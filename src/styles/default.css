@@ -132,3 +132,15 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   display: block;
   text-align: center; 
 }
+
+.hljs-transition {
+  display: block;
+  text-align: right;
+  color: black;
+}
+
+.hljs-centered {
+  display: block;
+  text-align: center;
+  color: black;
+}
